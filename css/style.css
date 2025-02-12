@@ -209,11 +209,8 @@ body.is-fixed {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 10%;
-  margin-top: 100px;
-  margin-bottom: 220px;
-}
-.about__item {
-  margin-top: 100px;
+  margin-top: 120px;
+  margin-bottom: 200px;
 }
 .about__item-img {
   position: relative;
@@ -320,9 +317,44 @@ body.is-fixed {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
+.works__main {
+  background-color: #fafafa;
+}
+.works__main__list {
+  margin-top: 120px;
+}
+.works__main__list h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #051D40;
+}
+.works__main__item {
+  margin-top: 70px;
+}
+.works__main__item-img {
+  margin-bottom: 16px;
+}
+.works__main__item-img img {
+  -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.works__main__item-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.works__main__item-text {
+  margin-bottom: 15px;
+}
 
 .ongoing-projects {
   background-color: #fafafa;
+  padding-top: 0;
 }
 .ongoing-projects h5 {
   font-size: 16px;
@@ -599,7 +631,7 @@ body.is-fixed {
   }
   .about__list {
     margin-bottom: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 1%;
   }
   .about__item-img {
@@ -684,9 +716,6 @@ body.is-fixed {
 // tb
 --------------------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .section__head-main {
-    font-size: 54px;
-  }
   .fv__contents {
     bottom: 50%;
     -webkit-transform: translateY(50%);
@@ -707,6 +736,9 @@ body.is-fixed {
   }
   .about__list {
     margin-bottom: 120px;
+  }
+  .about__item {
+    margin-top: 50px;
   }
   .works__list {
     margin-bottom: 120px;
